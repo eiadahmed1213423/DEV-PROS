@@ -259,6 +259,78 @@
       padding: 8px 14px;
       border-radius: 8px;
     }
+
+    /* RESPONSIVE FIXES FOR PHONES */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 10px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .nav-buttons {
+        position: static;
+        align-self: flex-end;
+        margin-top: 10px;
+      }
+
+      .nav-buttons a {
+        position: static;
+        font-size: 0.9rem;
+        padding: 8px 12px;
+      }
+
+      .product-showcase {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        width: 90%;
+      }
+
+      .product-showcase img {
+        max-width: 100%;
+      }
+
+      .product-showcase .text {
+        max-width: 100%;
+      }
+
+      .slider {
+        width: 100%;
+        height: auto;
+      }
+
+      .slider-container {
+        width: fit-content;
+        animation: none;
+        overflow-x: auto;
+        gap: 20px;
+      }
+
+      .slider img {
+        width: 200px;
+        height: auto;
+      }
+
+      .logo {
+        font-size: 1.2rem;
+      }
+
+      .chat-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
+      }
+    }
   </style>
 </head>
 <body>
