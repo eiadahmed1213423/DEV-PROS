@@ -7,6 +7,7 @@
   <link rel="icon" href="companylogo_larger_upscaled (1).png" type="image/png" />
   <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
   <style>
+    /* [Styles omitted for brevity, use your existing styles here] */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -16,14 +17,13 @@
       justify-content: center;
       align-items: center;
       width: 100vw;
-      background-color: #1c2138; /* much darker blue */
+      background-color: #1c2138;
       overflow: hidden;
-      color: #b0b8d3; /* lighter muted text for contrast */
+      color: #b0b8d3;
     }
-
     .container {
-      background: rgba(28, 33, 56, 0.75); /* darker, more opaque */
-      padding: 70px 25px 25px; /* extra top padding for highlight */
+      background: rgba(28, 33, 56, 0.75);
+      padding: 70px 25px 25px;
       border-radius: 12px;
       box-shadow: 0 10px 30px rgba(15, 20, 44, 0.8);
       max-width: 350px;
@@ -36,8 +36,6 @@
       flex-direction: column;
       justify-content: center;
     }
-
-    /* Improved highlight */
     .highlight {
       color: #8aa1d6;
       font-size: 1.6rem;
@@ -57,14 +55,12 @@
       user-select: none;
       box-sizing: border-box;
     }
-
     .input-field {
       margin-bottom: 12%;
       position: relative;
       width: 100%;
       margin-top: 20px;
     }
-
     input {
       width: calc(100% - 50px);
       padding: 12px;
@@ -78,24 +74,11 @@
       border-radius: 6px;
       transition: border-color 0.3s ease, background-color 0.3s ease;
     }
-
-    /* Autofill fix */
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:focus,
-    input:-webkit-autofill:active {
-      -webkit-box-shadow: 0 0 0 1000px rgba(28, 33, 56, 0.85) inset !important;
-      -webkit-text-fill-color: #b0b8d3 !important;
-      transition: background-color 5000s ease-in-out 0s;
-      caret-color: #8aa1d6;
-    }
-
     input:focus {
       border-color: #8aa1d6;
       background: rgba(28, 33, 56, 0.95);
       color: #b0b8d3;
     }
-
     label {
       position: absolute;
       top: 50%;
@@ -108,7 +91,6 @@
       transition: all 0.3s ease;
       user-select: none;
     }
-
     input:focus + label,
     input:not(:placeholder-shown) + label {
       top: -10px;
@@ -119,7 +101,6 @@
       background-color: rgba(28, 33, 56, 0.85);
       border-radius: 4px;
     }
-
     .btn {
       width: 55%;
       padding: 12px;
@@ -135,7 +116,6 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 8px rgba(138, 161, 214, 0.7);
     }
-
     .btn:hover {
       background-color: #6c7dbf;
       border-color: #5767a1;
@@ -143,7 +123,6 @@
       transform: scale(1.05);
       box-shadow: 0 6px 14px rgba(138, 161, 214, 0.9);
     }
-
     .divider {
       width: 75%;
       margin: 18px auto;
@@ -152,28 +131,24 @@
       align-items: center;
       justify-content: center;
     }
-
     .divider::before,
     .divider::after {
       content: '';
       flex: 1;
       border-bottom: 2px solid rgba(138, 161, 214, 0.4);
     }
-
     .divider-text {
       margin: 0 10px;
       color: rgba(138, 161, 214, 0.75);
       font-size: 13px;
       font-weight: 600;
     }
-
     .social-boxes {
       display: flex;
       justify-content: center;
       gap: 12px;
       margin-top: 22px;
     }
-
     .social-box {
       width: 42px;
       height: 42px;
@@ -186,18 +161,15 @@
       transition: all 0.3s ease;
       box-shadow: 0 2px 6px rgba(138, 161, 214, 0.4);
     }
-
     .social-box img {
       width: 28px;
       height: 28px;
       filter: drop-shadow(0 0 2px rgba(138, 161, 214, 0.8));
     }
-
     .social-box:hover {
       transform: scale(1.1);
       box-shadow: 0 6px 18px rgba(138, 161, 214, 0.8);
     }
-
     footer {
       background: transparent;
       padding: 8px 0;
@@ -209,11 +181,18 @@
       color: #b0b8d3;
     }
   </style>
+  <script>
+    function handleLogin(event) {
+      event.preventDefault(); // Prevent form submission
+      // Optionally, you can add authentication logic here
+      window.location.href = "https://eiadahmed1213423.github.io/DEV-PROS/DEVPROS.html";
+    }
+  </script>
 </head>
 <body>
   <div class="container">
     <span class="highlight">DevPros</span>
-    <form onsubmit="location.href='https://eiadahmed1213423.github.io/DEV-PROS/DEVPROS.html'; return false;">
+    <form onsubmit="handleLogin(event)">
       <div class="input-field">
         <input type="email" class="form-control" placeholder=" " required />
         <label>Email or Username</label>
@@ -239,5 +218,8 @@
       </div>
     </form>
   </div>
+  <footer>
+    &copy; 2025 DevPros. All rights reserved.
+  </footer>
 </body>
 </html>
