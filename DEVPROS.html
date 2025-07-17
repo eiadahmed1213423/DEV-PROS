@@ -31,13 +31,15 @@
       align-items: center;
       padding: 20px 10%;
       position: relative;
-      gap: 30px;
     }
 
     .nav-links {
       display: flex;
       gap: 24px;
       align-items: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .nav-links a {
@@ -45,13 +47,12 @@
       text-decoration: none;
       font-size: 1rem;
       padding: 8px 14px;
-      border-radius: 5px;
+      border-radius: 8px;
       transition: all 0.3s ease;
     }
 
     .nav-links a:hover {
       background: rgba(255, 255, 255, 0.1);
-      
     }
 
     .nav-buttons {
@@ -69,8 +70,6 @@
       border-radius: 8px;
       background: rgba(0, 0, 0, 0.4);
       transition: background 0.3s ease;
-      position: absolute;
-      right: 10px;
     }
 
     .nav-buttons a:hover {
@@ -87,8 +86,8 @@
       display: none;
       position: absolute;
       background: rgba(30, 30, 60, 0.95);
-      min-width: 140px;
-      border-radius: 6px;
+      min-width: 135px;
+      border-radius: 4px;
       top: 35px;
     }
 
@@ -259,7 +258,6 @@
       border-radius: 8px;
     }
 
-    /* RESPONSIVE FIXES FOR PHONES */
     @media (max-width: 768px) {
       .navbar {
         flex-direction: column;
@@ -270,9 +268,11 @@
 
       .nav-links {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 12px;
-        width: 100%;
+        position: static;
+        transform: none;
+        margin-top: 10px;
       }
 
       .nav-buttons {
@@ -387,3 +387,4 @@
 
 </body>
 </html>
+
