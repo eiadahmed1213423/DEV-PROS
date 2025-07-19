@@ -223,6 +223,27 @@
       box-shadow: 0 0 12px #00bcd4;
     }
 
+    .stats-block {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .stat h3 {
+      font-size: 2rem;
+      color: #00e5ff;
+      text-shadow: 0 0 10px #00e5ff;
+      margin-bottom: 8px;
+    }
+
+    .stat p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
     @keyframes scrollOneLogo {
       0% { transform: translateX(0); }
       12.5% { transform: translateX(-400px); }
@@ -381,10 +402,24 @@
         </div>
       </div>
     </div>
+
+    <div class="stats-block">
+      <div class="stat">
+        <h3>1000+</h3>
+        <p>Devices Sold</p>
+      </div>
+      <div class="stat">
+        <h3>24/7</h3>
+        <p>Support</p>
+      </div>
+      <div class="stat">
+        <h3>10+</h3>
+        <p>Global Partners</p>
+      </div>
+    </div>
   </div>
 
   <button class="chat-btn"><i class="fas fa-comment-dots"></i></button>
 
 </body>
 </html>
-
